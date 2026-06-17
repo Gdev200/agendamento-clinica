@@ -1,0 +1,85 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 { color: #2c3e50; text-align: center; }
+
+.form-group { margin-bottom: 15px; }
+
+label { display: block; margin-bottom: 5px; font-weight: bold; }
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+button:hover { background-color: #219150; }
+
+.hidden { display: none; }
+
+#resumo {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e8f5e9;
+    border-left: 5px solid #27ae60;
+}
+
+/* Passo 3: Responsividade (Media Queries) */
+
+/* Dispositivos Móveis (até 768px) */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+    input, select, button {
+        font-size: 18px; /* Maior para facilitar o toque */
+        padding: 15px;
+    }
+}
+
+/* Tablets (768px a 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+}
+
+/* Desktops (Acima de 1024px) */
+@media (min-width: 1025px) {
+    .container {
+        max-width: 500px;
+    }
+}
